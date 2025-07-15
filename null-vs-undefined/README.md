@@ -6,9 +6,9 @@ Siempre suelo confundir estos 2 conceptos, dejare un apunte de las diferencias d
 
 ## Significado
 
-    - **null**: Valor vacío intencionalmente. Lo asignas tú para indicar que algo no tiene valor (y así debe ser).
+- **null**: Valor vacío intencionalmente. Lo asignas tú para indicar que algo no tiene valor (y así debe ser).
 
-    - **undefined**: Valor aún no asignado. JavaScript lo coloca automáticamente cuando una variable no fue inicializada, aunque también puedes asignarlo tú.
+- **undefined**: Valor aún no asignado. JavaScript lo coloca automáticamente cuando una variable no fue inicializada, aunque también puedes asignarlo tú.
 
 ## Typeof
 
@@ -27,13 +27,15 @@ Siempre suelo confundir estos 2 conceptos, dejare un apunte de las diferencias d
 Es donde hay una diferencia importante, al serializarlo a cadena de texto con `JSON.stringify(ejemplo)`, los atributos `undefined` son eliminados, mientras que los atributos con valor `null`, se siguen manteniendo.
 
 ```
-    const persona = {
-        nombre: "Isa",
-        apellido: null,
-        edad: undefined,
-    };
+const persona = {
+    nombre: "Isa",
+    apellido: null,
+    edad: undefined,
+};
 
-    console.log(JSON.stringify(persona)); // {"nombre":"Isa","apellido":null}
+console.log(JSON.stringify(persona));
+// {"nombre":"Isa","apellido":null}
+
 ```
 
 Esto pasa porque `undefined` se considera no relevante para JSON, `null` es un valor explicito.
@@ -43,20 +45,20 @@ Esto pasa porque `undefined` se considera no relevante para JSON, `null` es un v
 Se tiene resultados diferentes si se hacen las comparaciones con la igualdad abstracta o extricta.
 
 ```
-    // Comparación abstracta
-    null == undefined   // true
-    undefined == null   // true
+// Comparación abstracta
+null == undefined   // true
+undefined == null   // true
 
-    // Comparación estricta
-    null === undefined  // false
-    undefined === null  // false
+// Comparación estricta
+null === undefined  // false
+undefined === null  // false
 ```
 
 ## Usos comunes
 
-    - **null**: Valor vacío intencional para reinicio o limpieza. (Utilizarlo en valores que quieres controlar)
+- **null**: Valor vacío intencional para reinicio o limpieza. (Utilizarlo en valores que quieres controlar)
 
-    - **undefined**: Valor asignado por js u opcional. (Parametros opcionales)
+- **undefined**: Valor asignado por js u opcional. (Parametros opcionales)
 
 ---
 
