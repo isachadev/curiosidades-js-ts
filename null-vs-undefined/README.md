@@ -65,3 +65,5 @@ undefined === null  // false
 En resumen:
 `Undefined` valor asignado por js (warning, error u opcional).
 `null` es una decisión explícita del programador.
+
+![Código](https://github.com/isachadev/curiosidades-js-ts/blob/main/null-vs-undefined/thumb.webp)
