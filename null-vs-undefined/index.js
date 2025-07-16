@@ -28,9 +28,9 @@ const persona = {
 console.log("persona: ", JSON.stringify(persona)); // {"nombre":"Isa","apellido":null}
 
 /**
- * COMPARADORES DE IGUALDAD E IDENTIDAD
+ * COMPARADORES
  */
-console.log("\n\nCOMPARADORES DE IGUALDAD E IDENTIDAD");
+console.log("\n\nCOMPARADORES");
 
 // Comparación abstracta
 console.log("null == undefined: ", null == undefined); // true
