@@ -15,8 +15,8 @@ Siempre suelo confundir estos 2 conceptos, dejare un apunte de las diferencias d
 ¿Qué pasa si se utiliza `typeof`?
 
 ```
-    typeof null         //object
-    typeod undefined    //undefined
+typeof null         //object
+typeod undefined    //undefined
 
 ```
 
