@@ -30,7 +30,7 @@ console.log("persona: ", JSON.stringify(persona)); // {"nombre":"Isa","apellido"
 /**
  * COMPARADORES
  */
-console.log("\n\nCOMPARADORES ");
+console.log("\n\nCOMPARADORES");
 
 // Comparación abstracta
 console.log("null == undefined: ", null == undefined); // true
