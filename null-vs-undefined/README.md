@@ -4,13 +4,13 @@ Siempre suelo confundir estos 2 conceptos, dejare un apunte de las diferencias d
 
 ---
 
-## Significado
+## ℹ️ Significado
 
 - **null**: Valor vacío intencionalmente. Lo asignas tú para indicar que algo no tiene valor (y así debe ser).
 
 - **undefined**: Valor aún no asignado. JavaScript lo coloca automáticamente cuando una variable no fue inicializada, aunque también puedes asignarlo tú.
 
-## Typeof
+## 🧐 Typeof
 
 ¿Qué pasa si se utiliza `typeof`?
 
@@ -22,7 +22,7 @@ typeod undefined    //undefined
 
 **Curiosamente** null es un objeto (como casi todo en javascript)
 
-## Comportamiento en JSON
+## 🖥️ Comportamiento en JSON
 
 Es donde hay una diferencia importante, al serializarlo a cadena de texto con `JSON.stringify(ejemplo)`, los atributos `undefined` son eliminados, mientras que los atributos con valor `null`, se siguen manteniendo.
 
@@ -40,7 +40,7 @@ console.log(JSON.stringify(persona));
 
 Esto pasa porque `undefined` se considera no relevante para JSON, `null` es un valor explicito.
 
-## Comparadores
+## 🟰 Comparadores
 
 Se tiene resultados diferentes si se hacen las comparaciones con la igualdad abstracta o extricta.
 
@@ -54,7 +54,7 @@ null === undefined  // false
 undefined === null  // false
 ```
 
-## Usos comunes
+## 🧩 Usos comunes
 
 - **null**: Valor vacío intencional para reinicio o limpieza. (Utilizarlo en valores que quieres controlar)
 
