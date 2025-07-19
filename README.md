@@ -15,16 +15,24 @@ Esto instalará TypeScript como dependencia local.
 ## ⚙️ Cómo compilar un archivo TypeScript
 
 ```bash
-  npx tsc ruta/al/archivo.ts
+  npx tsc ruta/carpeta-proyecto
 ```
 
-o, navegar hacia el directorio del archivo
+o, navegar hacia el directorio de proyecto
 
 ```bash
-  npx tsc archivo.ts
+  npx tsc
 ```
 
-El archivo .js será creado en la misma ubicación (si no usas outDir en tsconfig.json).
+Los archivos .js seran creados en la misma ubicación (si no usas outDir en tsconfig.json).
+
+## Ejecutar Typescript directamente
+
+Si no quieres pasar el codigo typescript a javascript ejecuta lo siguiente:
+
+```bash
+  npx tsx archivo.ts
+```
 
 ## 🚀 Ejecutar desde consola
 
